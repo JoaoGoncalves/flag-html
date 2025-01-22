@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Forms em HTML</h1>
+    <hr>
+
+    <form action="https://httpbin.org/anything" method="get" autocomplete="off" >
+
+        <article>
+            <label for="nome">Nome : </label><br>
+            <input type="text" id="nome" name="nome" size="30" maxlength="30" placeholder="inserir nome 😊" autocomplete="off" autofocus  >
+            <span>"preenchimento obrigatorio"</span>
+            <br>
+            <label for="apelido">Apelido:</label><br>
+            <input type="text" id="apelido" name="apelido" disabled>
+        </article>
+
+        <article>
+            <label for="comentarios">Comentários</label><br>
+            <textarea name="comentarios" id="comentarios" cols="50" rows="10" ></textarea>
+        </article>
+
+        <article>
+            <h1>Que Estilo de musica prefere?</h1>
+            <input type="radio" id="rock" name="musica" value="rock" checked>
+            <label for="rock">Rock</label>
+            
+            <input type="radio" id="pop" name="musica" value="pop">
+            <label for="pop">Pop</label>
+
+            <input type="radio" id="triphop" name="musica" value="triphop">
+            <label for="triphop">Trip-Hop</label>
+        </article>
+
+        <article>
+            <h1>Que serviço utiliza para Ouvir Musica?</h1>
+            <input type="checkbox" name="servico" id="spotify" value="spotify" checked>
+            <label for="spotify">Spotify</label>
+            
+            <input type="checkbox" name="servico" id="apple" value="apple">
+            <label for="apple">Apple Music</label>
+            
+            <input type="checkbox" name="servico" id="youtube" value="youtube">
+            <label for="youtube">Youtube</label>
+        </article>
+
+        <article>
+            <h1>Em que Device costuma ouvir Musica?</h1>
+            <label for="device">Device:</label>
+            <select name="device" id="device">
+                <option value="none">...</option>
+                <option value="walkman">Walkman</option>
+                <option value="discman">Discman</option>
+                <option value="iPod">iPod</option>
+                <option value="radio">Radio</option>
+            </select>
+        </article>
+
+        <article>
+            <h1>Em que Device costuma ouvir Musica? - 2</h1>
+            <label for="device">Device:</label><br>
+            <p>pode escolher varios com o "Ctrl"</p>
+            <select name="device2" id="device" multiple size="5">
+                <option value="none">...</option>
+                <option value="walkman">Walkman</option>
+                <option value="discman">Discman</option>
+                <option value="iPod">iPod</option>
+                <option value="radio">Radio</option>
+                <option value="computador">PC</option>
+                <option value="tv">TV</option>
+            </select>
+        </article>
+
+        <article>
+            <h1>qual o Browser que nais Utiliza?</h1>
+            <label for="browser">Browser:</label>
+            <input type="text" id="browser" name="browser" list="browsers">
+            <datalist id="browsers">
+                <option >Egdge</option>
+                <option >Google</option>
+                <option >Firefox</option>
+                <option >Brave</option>
+                <option >Safari</option>
+                <option >Arc</option>
+            </datalist>
+        </article>
+
+        <article>
+            <h1>Opcoes de text input</h1>
+            <input type="color" name="color" ><br>
+            <input type="date" name="date" ><br>
+            <input type="time" name="time" ><br>
+            <input type="password" name="password" ><br>
+            <input type="number" name="number" ><br>
+            <input type="email" name="email"  ><br>
+            <input type="url" name="url"  ><br>
+            <input type="search" name="search"  ><br>
+            <input type="range" name="range" min="0" max="10" value="8" step="2" ><br>
+
+        </article>
+
+
+       <p>
+        <input type="reset" value="ops enganei-me">
+         <input type="submit" value="envia la essa treta">
+         <button>SUBMIT</button>
+       </p>
+
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+</html>
