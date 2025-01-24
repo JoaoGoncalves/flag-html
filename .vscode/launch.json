@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "chrome",
+            "name": "http://127.0.0.1:3000/8_forms/forms.html",
+            "request": "launch",
+            "url": "http://127.0.0.1:3000/8_forms/forms.html"
+        },
+        {
+            "type": "chrome",
+            "name": "http://127.0.0.1:3000/7_media/audio.html",
+            "request": "launch",
+            "url": "http://127.0.0.1:3000/7_media/audio.html"
+        },
+        {
+            "type": "chrome",
+            "name": "http://127.0.0.1:3000/7_media/video.html",
+            "request": "launch",
+            "url": "http://127.0.0.1:3000/7_media/video.html"
+        }
+    ]
+}
