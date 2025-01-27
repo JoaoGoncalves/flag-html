@@ -36,8 +36,8 @@ $mail->SMTPSecure = SMTP_SECURE;
 $mail->Port = PORT;
 
 $mail->setFrom(FROM_EMAIL, FROM_NAME);
-$mail->addAddress($email, $firstname); 
-//$mail->addAddress('joao@joaogoncalves.net', 'joao jose'); // para enviar para o email que o user insere
+$mail->addAddress($email, $firstname);  // para enviar para o email que o user insere
+//$mail->addAddress('joao@joaogoncalves.net', 'joao jose'); // definir o email para onde enviar a mensagem
 $mail->isHTML(true);
 
 
@@ -46,15 +46,15 @@ $mail->Body    = $msgAEnviar;
 $mail->AltBody = $msgAEnviar;
 
 if(!$mail->send()) {
-    // echo 'Message could not be sent.';
-    // echo 'Mailer Error: ' . $mail->ErrorInfo;
+     echo 'Message could not be sent.';
+     echo 'Mailer Error: ' . $mail->ErrorInfo;
     //header("Location: ../feedbackformerror.html");
-    header("Location: https://joaogoncalves.github.io/sendmail/feedbackformerror.html");
+    //header("Location: https://joaogoncalves.github.io/sendmail/feedbackformerror.html");
     
 }
 else {
-     //echo 'Message has been sent.';
+     echo 'Message has been sent.';
     //header("Location: ../feedbackform.html");
-    header("Location: https://joaogoncalves.github.io/sendmail/feedbackform.html");
+    //header("Location: https://joaogoncalves.github.io/sendmail/feedbackform.html");
     
 }
